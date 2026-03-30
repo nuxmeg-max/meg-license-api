@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MEG License API</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box }
+    body { font-family: 'Segoe UI', sans-serif; background: #0f0f0f; color: #eee; min-height: 100vh; display: flex; align-items: center; justify-content: center }
+    .card { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 16px; padding: 40px; max-width: 480px; width: 90%; text-align: center }
+    .logo { font-size: 48px; margin-bottom: 16px }
+    h1 { font-size: 24px; color: #25D366; margin-bottom: 8px }
+    p { color: #888; font-size: 14px; margin-bottom: 24px }
+    .status { display: inline-flex; align-items: center; gap: 8px; background: #0d2818; border: 1px solid #25D366; color: #25D366; padding: 8px 20px; border-radius: 20px; font-size: 13px; margin-bottom: 32px }
+    .dot { width: 8px; height: 8px; background: #25D366; border-radius: 50%; animation: pulse 1.5s infinite }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
+    .endpoints { text-align: left; background: #111; border-radius: 10px; padding: 16px; margin-bottom: 24px }
+    .endpoints h3 { font-size: 12px; color: #555; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px }
+    .endpoint { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid #1e1e1e }
+    .endpoint:last-child { border-bottom: none }
+    .method { font-size: 11px; font-weight: bold; padding: 2px 8px; border-radius: 4px; min-width: 42px; text-align: center }
+    .get { background: #0d2818; color: #25D366 }
+    .post { background: #1a1200; color: #f0a500 }
+    .path { font-size: 13px; color: #ccc; font-family: monospace }
+    .footer { font-size: 12px; color: #444 }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">🤖</div>
+    <h1>MEG License API</h1>
+    <p>Sistem lisensi terpusat untuk Bot WhatsApp</p>
+    <div class="status">
+      <div class="dot"></div>
+      API Online
+    </div>
+    <div class="endpoints">
+      <h3>Endpoints</h3>
+      <div class="endpoint">
+        <span class="method get">GET</span>
+        <span class="path">/api/check</span>
+      </div>
+      <div class="endpoint">
+        <span class="method post">POST</span>
+        <span class="path">/api/add</span>
+      </div>
+      <div class="endpoint">
+        <span class="method post">POST</span>
+        <span class="path">/api/delete</span>
+      </div>
+      <div class="endpoint">
+        <span class="method get">GET</span>
+        <span class="path">/api/list</span>
+      </div>
+    </div>
+    <p class="footer">© 2026 MEG Official — All rights reserved</p>
+  </div>
+</body>
+</html>
